@@ -11,7 +11,7 @@
     Font-style: Medium;
     font-size: 16px;
 }
-.asaid__container{
+.asaid__header{
     background: #FFFFFF;
     block-size: border-box;
     width: 320px;
@@ -48,7 +48,7 @@
     border: none;
     background-repeat:no-repeat;
     background-position: center;
-    transition: width 2s,height 2s, background-color 2s, transform 2s;
+    transition: width 0.5s,height 0.5s, background-color 0.5s, transform 0.5s;
     cursor: pointer;
     }
     .button:hover{
@@ -58,7 +58,7 @@
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
     }
-    .header__button-delite{
+    .header__button-delete{
         background-image:url(img/x.png);
         margin:23px 0 57px 23px;
     }
@@ -88,7 +88,7 @@
         white-space:nowrap;
         margin-left: 0;
     }
-    .menu__link{
+    .main__link{
         text-decoration: none;
         color: #1B1C21;
         padding: 0 0 0 1.5em ;
@@ -99,7 +99,7 @@
         height: 32px;
         margin: 2em 0 2em 0;
     }  
-    .menu__link:hover::before{
+    .main__link:hover::before{
         content:"";
         background-color: #41F6D7;
         border-radius: 0 5px 5px 0;
@@ -109,7 +109,7 @@
         width: 4px;
         height: 100%;
     } 
-.Footer__content{
+.footer__content{
     display: block;
     margin-top: 268px;
 }
@@ -120,13 +120,14 @@
     margin-left: 24px;
     cursor: pointer;
 }
-.footer__contact-mail{
+.contact__mail{
     font-family:'TTLakesCondensed-Medium.ttf';
+    color: #1B1C21;
 }
-.footer__contact-phone{
+.footer__phone{
     font-family:'TTLakes-Bold.ttf';
 }
-.footer__button-leng{
+.footer__button-lang{
   margin: 40px 0 32px 24px;
   cursor: pointer;
 }
