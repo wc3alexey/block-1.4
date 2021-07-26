@@ -121,8 +121,9 @@
     cursor: pointer;
 }
 .contact__mail{
-    font-family:'TTLakesCondensed-Medium.ttf';
+    text-decoration: none;
     color: #1B1C21;
+    font-family:'TTLakesCondensed-Medium.ttf';
 }
 .footer__phone{
     font-family:'TTLakes-Bold.ttf';
@@ -146,12 +147,12 @@
     border: 0; 
     background: #FFFFFF;
 }
-a.button__link:active,
-a.button__link:hover,
-a.button__link {
+.button__link:active,
+.button__link:hover,
+.button__link {
     text-decoration: none;
     color: #1B1C21;
 }
-a.button__link:focus{
+.button__link:focus{
     color: #7E7E82;
 }
