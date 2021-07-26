@@ -11,18 +11,20 @@
     Font-style: Medium;
     font-size: 16px;
 }
-body{
-    background: #F2F2F2;
+.asaid__container{
+    background: #FFFFFF;
+    block-size: border-box;
     width: 320px;
     position:absolute;
     top:0;
+    margin: 0;
     float:right;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
 .header__content{
     width: 320px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .main__content{
     width: 320px;
@@ -131,17 +133,20 @@ body{
 .footer__button-ru{
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0;
+    background: #FFFFFF;
 }
 .footer__button-en{
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0;
+    background: #FFFFFF;
 }
 .footer__button-ch{
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0; 
+    background: #FFFFFF;
 }
 a.button__link:active,
-a.button__linke:hover,
+a.button__link:hover,
 a.button__link {
     text-decoration: none;
     color: #1B1C21;
