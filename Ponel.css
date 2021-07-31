@@ -11,30 +11,25 @@
     Font-style: Medium;
     font-size: 16px;
 }
-.asaid__header{
+.aside__menu{
     background: #FFFFFF;
-    block-size: border-box;
+    display: flex;
+    flex-direction: column;
     width: 320px;
-    position:absolute;
-    top:0;
-    margin: 0;
-    float:right;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
-.header__content{
-    width: 320px;
+.aside__content{
     display: flex;
     justify-content: space-between; 
 }
 .main__content{
-    width: 320px;
-    
+    width: 320px;   
 }
 .Footer__content{
-    width: 320px;
     margin-top: 268px;
+    flex-direction: column;
 }
-.header__img-group{
+.aside__img-group{
     margin: 18px 0 50px 17px;
     cursor: pointer;
 }
@@ -58,11 +53,11 @@
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
     }
-    .header__button-delete{
+    .aside__button-close{
         background-image:url(img/x.png);
         margin:23px 0 57px 23px;
     }
-    .header__button-search{
+    .aside__button-search{
         background-image:url(img/search.png);
         margin:23px 24px 0 78px ;
     }
@@ -89,6 +84,7 @@
         margin-left: 0;
     }
     .main__link{
+         cursor: pointer;
         text-decoration: none;
         color: #1B1C21;
         padding: 0 0 0 1.5em ;
@@ -109,6 +105,9 @@
         width: 4px;
         height: 100%;
     } 
+    .main__link:focus{
+        color: #7E7E82;   
+    }
 .footer__content{
     display: block;
     margin-top: 268px;
@@ -121,12 +120,18 @@
     cursor: pointer;
 }
 .contact__mail{
+margin: 16px 0 12px 0;
+}
+.contact__mail-link{
     text-decoration: none;
     color: #1B1C21;
     font-family:'TTLakesCondensed-Medium.ttf';
 }
-.footer__phone{
+.contact__phone{
     font-family:'TTLakes-Bold.ttf';
+    Font-size: 24px;
+    color: #1B1C21;
+text-decoration: none;
 }
 .footer__button-lang{
   margin: 40px 0 32px 24px;
@@ -136,23 +141,38 @@
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0;
     background: #FFFFFF;
+    cursor: pointer;
 }
 .footer__button-en{
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0;
     background: #FFFFFF;
+    cursor: pointer;
 }
 .footer__button-ch{
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0; 
     background: #FFFFFF;
+    cursor: pointer;
 }
-.button__link:active,
-.button__link:hover,
-.button__link {
+.footer__button-ru:active:hover{
     text-decoration: none;
     color: #1B1C21;
 }
-.button__link:focus{
+.footer__button-en:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-ch:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-ru:focus{
     color: #7E7E82;
+}
+.footer__button-en:focus{
+    color: #7E7E82;  
+}
+.footer__button-ch:focus{
+    color: #7E7E82;  
 }
