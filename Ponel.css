@@ -11,32 +11,40 @@
     Font-style: Medium;
     font-size: 16px;
 }
-.aside__menu{
+.aside__header{
+    max-height: 1024px;
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     width: 320px;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
-.aside__content{
+.aside__menu-header{
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    margin-bottom: 50px; 
 }
-.main__content{
+.main__menu{
     width: 320px;   
 }
-.Footer__content{
-    margin-top: 268px;
+.footer__menu{
+    margin-top: 236px;
     flex-direction: column;
 }
 .aside__img-group{
-    margin: 18px 0 50px 17px;
+    margin: 18px 0 0 17px;
     cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.aside__img-group:hover {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
 }
 .button{
     background-color:#FF3E79 ;
     display: inline-block;
-    margin: 1em 0.5em;
+    margin: 0 0.5em 1em 0.5em;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -55,7 +63,7 @@
     }
     .aside__button-close{
         background-image:url(img/x.png);
-        margin:23px 0 57px 23px;
+        margin:23px 0 0 23px;
     }
     .aside__button-search{
         background-image:url(img/search.png);
@@ -93,8 +101,12 @@
         position: relative;
         align-items: center;
         height: 32px;
-        margin: 2em 0 2em 0;
+        margin: 0 0 2em 0;
+        transition: 0.5s; 
     }  
+   .main__link:hover {
+        transform: scale(0.9);
+    }
     .main__link:hover::before{
         content:"";
         background-color: #41F6D7;
@@ -110,7 +122,7 @@
     }
 .footer__content{
     display: block;
-    margin-top: 268px;
+    margin-top: 236px;
 }
 .footer__button{
     margin-left: 22px;
@@ -121,6 +133,11 @@
 }
 .contact__mail{
 margin: 16px 0 12px 0;
+transition: 0.5s; 
+display: block; 
+}
+.contact__mail:hover {
+    transform: scale(1.2);
 }
 .contact__mail-link{
     text-decoration: none;
@@ -132,6 +149,11 @@ margin: 16px 0 12px 0;
     Font-size: 24px;
     color: #1B1C21;
 text-decoration: none;
+transition: 0.5s; 
+display: block; 
+}
+.contact__phone:hover {
+    transform: scale(1.2);
 }
 .footer__button-lang{
   margin: 40px 0 32px 24px;
@@ -142,18 +164,30 @@ text-decoration: none;
     border: 0;
     background: #FFFFFF;
     cursor: pointer;
+    transition: 0.5s;  
+}
+.footer__button-ru:hover {
+    transform: scale(1.2);
 }
 .footer__button-en{
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0;
     background: #FFFFFF;
     cursor: pointer;
+    transition: 0.5s;  
+}
+.footer__button-en:hover {
+    transform: scale(1.2);
 }
 .footer__button-ch{
     font-family:'TTLakesCondensed-Medium.ttf';
     border: 0; 
     background: #FFFFFF;
     cursor: pointer;
+    transition: 0.5s;  
+}
+.footer__button-ch:hover {
+    transform: scale(1.2);
 }
 .footer__button-ru:active:hover{
     text-decoration: none;
