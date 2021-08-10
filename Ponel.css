@@ -11,7 +11,7 @@
     Font-style: Medium;
     font-size: 16px;
 }
-.aside__header{
+.aside{
     max-height: 1024px;
     background: #FFFFFF;
     display: flex;
@@ -19,10 +19,10 @@
     width: 320px;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
-.aside__menu-header{
+.aside__menu{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px; 
+    margin:23px 24px 50px 24px; 
 }
 .main__menu{
     width: 320px;   
@@ -31,20 +31,19 @@
     margin-top: 236px;
     flex-direction: column;
 }
-.aside__img-group{
-    margin: 18px 0 0 17px;
+.aside__menu-img{
+    margin: 0 0 0 17px;
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-.aside__img-group:hover {
+.aside__menu-img:hover {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
 }
 .button{
     background-color:#FF3E79 ;
     display: inline-block;
-    margin: 0 0.5em 1em 0.5em;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -63,11 +62,10 @@
     }
     .aside__button-close{
         background-image:url(img/x.png);
-        margin:23px 0 0 23px;
     }
     .aside__button-search{
         background-image:url(img/search.png);
-        margin:23px 24px 0 78px ;
+        margin-left:78px ;
     }
     .footer__button-phone{
         background-image: url(img/phone.png);
@@ -81,17 +79,17 @@
         background-image: url(img/contacts.png);
         margin-right: 16px;
     }
-     .main__list{
+     .menu__direct-list{
     padding-inline-start: 0px;
     margin: 0;
     }
-    .main__item{
+    .menu__item{
         font-family:'TTLakesCondensed-Medium.ttf';
         list-style:none;
         white-space:nowrap;
         margin-left: 0;
     }
-    .main__link{
+    .menu__link{
          cursor: pointer;
         text-decoration: none;
         color: #1B1C21;
@@ -104,10 +102,10 @@
         margin: 0 0 2em 0;
         transition: 0.5s; 
     }  
-   .main__link:hover {
+   .menu__link:hover {
         transform: scale(0.9);
     }
-    .main__link:hover::before{
+    .menu__link:hover::before{
         content:"";
         background-color: #41F6D7;
         border-radius: 0 5px 5px 0;
@@ -117,18 +115,17 @@
         width: 4px;
         height: 100%;
     } 
-    .main__link:focus{
+    .menu__link:focus{
         color: #7E7E82;   
     }
-.footer__content{
+.footer__group{
     display: block;
     margin-top: 236px;
-}
-.footer__button{
-    margin-left: 22px;
-}
-.footer__contact{
+    margin-bottom: 32px;
     margin-left: 24px;
+}
+
+.footer__contact{
     cursor: pointer;
 }
 .contact__mail{
@@ -156,7 +153,7 @@ display: block;
     transform: scale(1.2);
 }
 .footer__button-lang{
-  margin: 40px 0 32px 24px;
+  margin: 40px 0 0 0;
   cursor: pointer;
 }
 .footer__button-ru{
