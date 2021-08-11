@@ -19,25 +19,26 @@
     width: 320px;
     box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
 }
-.aside__menu{
+.aside__header{
     display: flex;
-    justify-content: space-between;
     margin:23px 24px 50px 24px; 
 }
-.main__menu{
-    width: 320px;   
+.aside__main{
+    width: 320px; 
+    flex-direction: column;
+    justify-content: space-around;
 }
-.footer__menu{
+.aside__footer{
     margin-top: 236px;
     flex-direction: column;
+    justify-content: space-around;
 }
-.aside__menu-img{
-    margin: 0 0 0 17px;
+.aside__header-img{
     cursor: pointer;
     -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
-.aside__menu-img:hover {
+.aside__header-img:hover {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
 }
@@ -61,25 +62,26 @@
         transform: rotate(180deg);
     }
     .aside__button-close{
+        margin-right: 17px;
         background-image:url(img/x.png);
     }
     .aside__button-search{
         background-image:url(img/search.png);
         margin-left:78px ;
     }
-    .footer__button-phone{
+    .social__button-phone{
         background-image: url(img/phone.png);
         margin:0 16px 0 0;
     }
-    .footer__button-message{
+    .social__button-message{
         background-image: url(img/message.png);
         margin-right: 16px;
     }
-    .footer__button-contact{
+    .social__button-contact{
         background-image: url(img/contacts.png);
         margin-right: 16px;
     }
-     .menu__direct-list{
+     .menu__direct{
     padding-inline-start: 0px;
     margin: 0;
     }
@@ -118,14 +120,15 @@
     .menu__link:focus{
         color: #7E7E82;   
     }
-.footer__group{
+.aside__footer{
+    justify-content: space-between;
     display: block;
     margin-top: 236px;
     margin-bottom: 32px;
     margin-left: 24px;
 }
 
-.footer__contact{
+.social__contact{
     cursor: pointer;
 }
 .contact__mail{
